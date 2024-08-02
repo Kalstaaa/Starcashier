@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class Petugas extends Controller
 {
     public function index () {
-        return view('petugas');
+        return view('petugas.index');
     }
 }
