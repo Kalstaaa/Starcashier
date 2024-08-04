@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/png" href="{{ asset('../images/LOGO.png') }}">
-
     <!----======== CSS ======== -->
-    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/petugas.css') }}">
 
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
-
 <body>
     <nav class="sidebar close">
         <header>
@@ -25,7 +21,7 @@
                 </span>
 
                 <div class="text logo-text">
-                    <span class="name">Admin</span>
+                    <span class="name">Petugas</span>
                     <span class="profession">StarCashier</span>
                 </div>
             </div>
@@ -41,18 +37,17 @@
                 </li>
 
                 <ul class="menu-links">
-
                     <li id="nav-home" class="nav-link">
-                        <a href="/admin/home">
+                        <a href="/petugas/home">
                             <i class='bx bx-home-alt icon'></i>
                             <span class="text nav-text">Home</span>
                         </a>
                     </li>
 
                     <li id="nav-product-item" class="nav-link">
-                        <a href="/admin/employe">
-                            <i class='bx bx-user icon'></i>
-                            <span class="text nav-text">Employee</span>
+                        <a href="/petugas/product">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav-text">Product Item</span>
                         </a>
                     </li>
 
@@ -63,29 +58,21 @@
             <div class="bottom-content">
                 <li class="">
                     <a href="#">
-                        <form action="{{ route('logout') }}" method="POST">
-                            @csrf
-                            <button type="submit"
-                                style="background: none; border: none; color: inherit; cursor: pointer; padding: 0; font: inherit; display: flex; align-items: center; text-decoration: none;">
-                                <i class='bx bx-log-out icon'></i>
-                                <span class="text nav-text">Logout</span>
-                            </button>
-                        </form>
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
                     </a>
                 </li>
+
             </div>
-
-
         </div>
 
     </nav>
 
     <section class="home">
-        <div class="text">Dashboard Admin</div>
+        <div class="text">Dashboard Petugas</div>
     </section>
 
-    <script src="{{ asset('js/sidebarAdmin.js') }}"></script>
+    <script src="{{ asset('js/sidebarPetugas.js') }}"></script>
 
 </body>
-
 </html>

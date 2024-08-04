@@ -179,3 +179,7 @@ form .title {
     color: black;
     font-size: 1.2rem;
 }
+
+.image-section img {
+    width: 300px;
+}

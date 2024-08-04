@@ -2,8 +2,10 @@
 
 use App\Http\Controllers\LandingPage;
 use App\Http\Controllers\Admin;
+use App\Http\Controllers\Employe;
 use App\Http\Controllers\Petugas;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Product;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -42,6 +44,10 @@ Route::post('/logout', function () {
 })->name('logout');
 
 
-Route::get('/admin', [Admin::class, 'index'])->name('admin');
-Route::get('/petugas', [Petugas::class, 'index'])->name('petugas');
+Route::get('/admin/home', [Admin::class, 'index'])->name('admin');
+Route::get('/admin/employe', [Employe::class, 'index'])->name('employe');
+
+
+Route::get('/petugas/home', [Petugas::class, 'index'])->name('petugas');
+Route::get('/petugas/product', [Product::class, 'index'])->name('product');
 

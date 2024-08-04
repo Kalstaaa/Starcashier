@@ -64,13 +64,13 @@
                         <button type="submit">Login</button>
                         <div class="sign">
                             <h6>Already have an account?</h6>
-                            <a href="">Login!</a>
+                            <a href="/login">Login!</a>
                         </div>
                     </div>
                 </div>
             </form>
             <div class="image-section">
-                <img src="{{ asset('../images/BG3.png') }}" alt="">
+                <img src="{{ asset('../images/BG4.png') }}" alt="">
             </div>
         </div>
     </div>

@@ -53,8 +53,8 @@
                     <div class="btn">
                         <button type="submit">Login</button>
                         <div class="sign">
-                            <h6>Already have an account?</h6>
-                            <a href="">Login!</a>
+                            <h6>Don't have an account?</h6>
+                            <a href="/register">Register!</a>
                         </div>
                     </div>
                 </div>

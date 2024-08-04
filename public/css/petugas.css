@@ -54,9 +54,6 @@ body.dark{
     transition: var(--tran-05);
     z-index: 100;
 }
-.sidebar.close{
-    width: 88px;
-}
 
 /* ===== Reusable code - Here ===== */
 .sidebar li{
@@ -94,9 +91,6 @@ body.dark{
     font-weight: 500;
     white-space: nowrap;
     opacity: 1;
-}
-.sidebar.close .text{
-    opacity: 0;
 }
 /* =========================== */
 
@@ -157,9 +151,6 @@ body.dark .sidebar header .toggle{
     color: var(--text-color);
 }
 
-.sidebar.close .toggle{
-    transform: translateY(-50%) rotate(0deg);
-}
 
 .sidebar .menu{
     margin-top: 40px;
@@ -298,11 +289,20 @@ body.dark .switch::before{
     padding: 12px 60px;
 }
 
-.sidebar.close ~ .home{
-    left: 78px;
-    height: 100vh;
-    width: calc(100% - 78px);
-}
 body.dark .home .text{
+    color: var(--text-color);
+}
+
+.sidebar li.nav-link.active a {
+    background-color: var(--primary-color);
+}
+
+.sidebar li.nav-link.active a .icon,
+.sidebar li.nav-link.active a .text {
+    color: var(--sidebar-color);
+}
+
+body.dark .sidebar li.nav-link.active a .icon,
+body.dark .sidebar li.nav-link.active a .text {
     color: var(--text-color);
 }

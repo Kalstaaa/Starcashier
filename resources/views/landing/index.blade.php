@@ -48,7 +48,9 @@
                     than
                     ever to handle your business operations. Join us in revolutionizing the way you manage your
                     point-of-sale needs.</p>
-                <button class="btn-section">Buy Now</button>
+                    <a href="/login">
+                        <button class="btn-section">Buy Now</button>
+                    </a>
             </div>
             <div class="section-image">
                 <img src="{{ '../images/SBG1.png' }}" alt="">

@@ -81,8 +81,9 @@
     </nav>
 
     <section class="home">
-        <div class="text">Dashboard Admin</div>
+        <div class="text">Employe</div>
     </section>
+
 
     <script src="{{ asset('js/sidebarAdmin.js') }}"></script>
 
