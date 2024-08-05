@@ -51,8 +51,15 @@
 
                     <li id="nav-product-item" class="nav-link">
                         <a href="/admin/employe">
+                            <i class='bx bxs-id-card icon'></i>
+                            <span class="text nav-text">Employe</span>
+                        </a>
+                    </li>
+
+                    <li id="nav-product-item" class="nav-link">
+                        <a href="/admin/employe">
                             <i class='bx bx-user icon'></i>
-                            <span class="text nav-text">Employee</span>
+                            <span class="text nav-text">Profil</span>
                         </a>
                     </li>
 

@@ -266,6 +266,7 @@ body.dark .switch::before{
     width: calc(100% - 250px);
     background-color: var(--body-color);
     transition: var(--tran-05);
+    z-index: 10;
 }
 
 .home .text{
@@ -291,4 +292,184 @@ body.dark .home .text{
 body.dark .sidebar li.nav-link.active a .icon,
 body.dark .sidebar li.nav-link.active a .text {
     color: var(--text-color);
+}
+
+.table-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 80vw;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+tbody button:nth-child(1) {
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: #c82333 solid;
+    color: black;
+}
+
+tbody button:nth-child(1):hover {
+    background-color: #c82333;
+    cursor: pointer;
+    transition: var(--tran-03);
+    color: var(--sidebar-color);
+}
+
+tbody button:nth-child(2) {
+    width: 100px;
+    height: 40px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: gold solid;
+    color: black;
+}
+
+tbody button:nth-child(2):hover {
+    background-color: gold;
+    cursor: pointer;
+    transition: var(--tran-03);
+    color: var(--sidebar-color);
+}
+
+
+
+.button-create {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+}
+
+.button-create button {
+    width: 200px;
+    height: 70px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: transparent;
+    border: var(--primary-color) solid;
+    color: black;
+}
+
+.button-create button:hover {
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border: none;
+    transition: var(--tran-03);
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.employee-form {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    width: 700px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.employee-form.show {
+    display: block;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.employee-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.employee-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.employee-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.employee-form button {
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+.employee-form button[type="button"] {
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: #dc3545;
+    border-radius: 10px;
+    border: none;
+    color: var(--sidebar-color);
+}
+
+.employee-form button[type="button"]:hover {
+    background-color: #c82333;
+}
+
+.employee-form button[type="submit"] {
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: #28a745;
+    border-radius: 10px;
+    border: none;
+    color: var(--sidebar-color);
+}
+
+.employee-form button[type="submit"]:hover {
+    background-color: #218838;
 }

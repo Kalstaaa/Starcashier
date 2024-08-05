@@ -22,12 +22,12 @@ use Illuminate\Support\Facades\Auth;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landing');
 });
 
 
 
-Route::get('/landing', [LandingPage::class, 'index'])->name('landing');
+Route::get('/', [LandingPage::class, 'index'])->name('landing');
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/login', [AuthController::class, 'auth'])->name('login.auth');

@@ -14,6 +14,8 @@
     <!----===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
+    {{-- Bootstrap --}}
+
 </head>
 
 <body>
@@ -51,8 +53,15 @@
 
                     <li id="nav-product-item" class="nav-link">
                         <a href="/admin/employe">
+                            <i class='bx bxs-id-card icon'></i>
+                            <span class="text nav-text">Employe</span>
+                        </a>
+                    </li>
+
+                    <li id="nav-product-item" class="nav-link">
+                        <a href="/admin/employe">
                             <i class='bx bx-user icon'></i>
-                            <span class="text nav-text">Employee</span>
+                            <span class="text nav-text">Profil</span>
                         </a>
                     </li>
 
@@ -82,8 +91,98 @@
 
     <section class="home">
         <div class="text">Employe</div>
-    </section>
 
+        <div class="button-create">
+            <button id="show-form-btn">Add Employee</button>
+        </div>
+
+        <div id="employee-form" class="employee-form">
+            <h2>Add Employee</h2>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Submit</button>
+                <button type="button" id="close-form-btn">Cancel</button>
+            </form>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Email</th>
+                        <th>Username</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>example1@example.com</td>
+                        <td>user1</td>
+                        <td>
+                            <button>Delete</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>example2@example.com</td>
+                        <td>user2</td>
+                        <td>
+                            <button>Delete</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>example3@example.com</td>
+                        <td>user3</td>
+                        <td>
+                            <button>Delete</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>example3@example.com</td>
+                        <td>user3</td>
+                        <td>
+                            <button>Delete</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>example3@example.com</td>
+                        <td>user3</td>
+                        <td>
+                            <button>Delete</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>example3@example.com</td>
+                        <td>user3</td>
+                        <td>
+                            <button>Delete</button>
+                            <button>Edit</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
 
     <script src="{{ asset('js/sidebarAdmin.js') }}"></script>
 

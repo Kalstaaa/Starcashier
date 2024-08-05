@@ -28,3 +28,19 @@ document.addEventListener('DOMContentLoaded', function() {
         activateNav(productItemNav, homeNav);
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const showFormButton = document.getElementById('show-form-btn');
+    const closeFormButton = document.getElementById('close-form-btn');
+    const employeeForm = document.getElementById('employee-form');
+
+    // Show the form with animation
+    showFormButton.addEventListener('click', function() {
+        employeeForm.classList.add('show');
+    });
+
+    // Hide the form with animation
+    closeFormButton.addEventListener('click', function() {
+        employeeForm.classList.remove('show');
+    });
+});
